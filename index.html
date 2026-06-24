@@ -4,245 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Мангал House</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:#1e1e1e;
-    color:white;
-}
-
-header{
-    background:#b22222;
-    text-align:center;
-    padding:30px 20px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.4);
-}
-
-header h1{
-    font-size:40px;
-}
-
-header p{
-    margin-top:10px;
-    color:#ffd700;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px 20px;
-}
-
-.section{
-    margin-bottom:40px;
-}
-
-.section h2{
-    color:#ffcc00;
-    margin-bottom:20px;
-    font-size:28px;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#2d2d2d;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.5);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:15px;
-}
-
-.card-title{
-    font-size:22px;
-    font-weight:bold;
-    color:#ffcc00;
-    margin-bottom:10px;
-}
-
-.card-weight{
-    color:#cccccc;
-    margin-bottom:15px;
-}
-
-.card-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.card-price{
-    color:#00ff88;
-    font-size:24px;
-    font-weight:bold;
-}
-
-.order-btn{
-    width:100%;
-    margin-top:15px;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#b22222;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.order-btn:hover{
-    background:#d32f2f;
-}
-
-footer{
-    background:#111;
-    text-align:center;
-    padding:25px;
-    color:#aaa;
-    margin-top:30px;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#1e1e1e;color:#fff}
+header{background:#b22222;text-align:center;padding:30px}
+header h1{font-size:42px}
+header p{color:#ffd700;margin-top:10px}
+.container{max-width:1200px;margin:auto;padding:25px}
+.section{margin-bottom:40px}
+.section h2{color:#ffcc00;margin-bottom:20px;font-size:30px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#2d2d2d;border-radius:15px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.4)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card-content{padding:15px}
+.card-title{font-size:20px;color:#ffcc00;margin-bottom:10px;font-weight:bold}
+.card-weight{color:#ccc;margin-bottom:10px}
+.card-price{font-size:24px;color:#00ff88;font-weight:bold}
+.order-btn{width:100%;margin-top:12px;padding:12px;border:none;border-radius:8px;background:#b22222;color:#fff}
+footer{text-align:center;padding:25px;background:#111;color:#aaa}
 </style>
-
 </head>
 <body>
-
 <header>
-    <h1>🔥 Мангал House</h1>
-    <p>Свежий шашлык на углях</p>
+<h1>🔥 Мангал House</h1>
+<p>Свежие блюда на углях</p>
 </header>
 
 <div class="container">
 
-    <div class="section">
-        <h2>🍖 Шашлык</h2>
-
-        <div class="products">
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Шашлык из свинины</div>
-                    <div class="card-weight">Вес: 300 г</div>
-                    <div class="card-footer">
-                        <div class="card-price">2500 ₸</div>
-                    </div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Шашлык из курицы</div>
-                    <div class="card-weight">Вес: 300 г</div>
-                    <div class="card-footer">
-                        <div class="card-price">1800 ₸</div>
-                    </div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Шашлык из баранины</div>
-                    <div class="card-weight">Вес: 300 г</div>
-                    <div class="card-footer">
-                        <div class="card-price">3200 ₸</div>
-                    </div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>🥩 Люля-кебаб</h2>
-
-        <div class="products">
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Люля-кебаб из говядины</div>
-                    <div class="card-weight">Вес: 250 г</div>
-                    <div class="card-price">2200 ₸</div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1529692236671-f1dc392f7f3b?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Люля-кебаб из баранины</div>
-                    <div class="card-weight">Вес: 250 г</div>
-                    <div class="card-price">2600 ₸</div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>🥤 Напитки</h2>
-
-        <div class="products">
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Coca-Cola</div>
-                    <div class="card-weight">Объём: 0.5 л</div>
-                    <div class="card-price">700 ₸</div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=800" alt="">
-                <div class="card-content">
-                    <div class="card-title">Сок</div>
-                    <div class="card-weight">Объём: 1 л</div>
-                    <div class="card-price">600 ₸</div>
-                    <button class="order-btn">Заказать</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+<div class="section">
+<h2>🍖 Шашлык</h2>
+<div class="products">
+<div class="card"><img src="images/dorado.jpg"><div class="card-content"><div class="card-title">Дорадо на мангале</div><div class="card-weight">1 шт</div><div class="card-price">1400 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/forel.jpg"><div class="card-content"><div class="card-title">Форелька на мангале</div><div class="card-weight">1 шт</div><div class="card-price">1000 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/semga.jpg"><div class="card-content"><div class="card-title">Семга на мангале</div><div class="card-weight">100 г</div><div class="card-price">1000 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/beef.jpg"><div class="card-content"><div class="card-title">Шашлык из говядины</div><div class="card-weight">200 г</div><div class="card-price">750 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/pork.jpg"><div class="card-content"><div class="card-title">Шашлык из свинины (шея)</div><div class="card-weight">200 г</div><div class="card-price">500 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/lamb.jpg"><div class="card-content"><div class="card-title">Шашлык из баранины</div><div class="card-weight">200 г</div><div class="card-price">600 ₽</div><button class="order-btn">Заказать</button></div></div>
+</div>
 </div>
 
-<footer>
-    ☎ Телефон для заказа: +7 XXX XXX XX XX
-</footer>
+<div class="section">
+<h2>🥩 Люля-кебаб</h2>
+<div class="products">
+<div class="card"><img src="images/lula1.jpg"><div class="card-content"><div class="card-title">Люля-кебаб из курицы</div><div class="card-weight">190 г</div><div class="card-price">400 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/lula2.jpg"><div class="card-content"><div class="card-title">Люля-кебаб из свинины</div><div class="card-weight">160 г</div><div class="card-price">500 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/lula2.jpg"><div class="card-content"><div class="card-title">Люля-кебаб из говядины</div><div class="card-weight">160 г</div><div class="card-price">650 ₽</div><button class="order-btn">Заказать</button></div></div>
+<div class="card"><img src="images/lula3.jpg"><div class="card-content"><div class="card-title">Люля-кебаб из баранины</div><div class="card-weight">170 г</div><div class="card-price">600 ₽</div><button class="order-btn">Заказать</button></div></div>
+</div>
+</div>
 
+<div class="section">
+<h2>🐦 Блюда на мангале</h2>
+<div class="products">
+<div class="card"><img src="images/quail.jpg"><div class="card-content"><div class="card-title">Перепёлка на мангале</div><div class="card-weight">1 шт</div><div class="card-price">650 ₽</div><button class="order-btn">Заказать</button></div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>🥗 Овощи на мангале</h2>
+<div class="products">
+<div class="card"><img src="images/tomato.jpg"><div class="card-content"><div class="card-title">Помидор</div><div class="card-weight">Порция</div><div class="card-price">200 ₽</div></div></div>
+<div class="card"><img src="images/pepper.jpg"><div class="card-content"><div class="card-title">Перец</div><div class="card-weight">Порция</div><div class="card-price">200 ₽</div></div></div>
+<div class="card"><img src="images/eggplant.jpg"><div class="card-content"><div class="card-title">Баклажаны</div><div class="card-weight">Порция</div><div class="card-price">200 ₽</div></div></div>
+<div class="card"><img src="images/mushroom.jpg"><div class="card-content"><div class="card-title">Шампиньоны</div><div class="card-weight">300 г</div><div class="card-price">400 ₽</div></div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>🍲 Кавказская кухня</h2>
+<div class="products">
+<div class="card"><img src="images/piti.jpg"><div class="card-content"><div class="card-title">Пити</div><div class="card-weight">400/50</div><div class="card-price">800 ₽</div></div></div>
+<div class="card"><img src="images/dolma.jpg"><div class="card-content"><div class="card-title">Долма</div><div class="card-weight">300/50</div><div class="card-price">700 ₽</div></div></div>
+<div class="card"><img src="images/shurpa.jpg"><div class="card-content"><div class="card-title">Шурпа</div><div class="card-weight">400/50</div><div class="card-price">600 ₽</div></div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>🥣 Соусы</h2>
+<div class="products">
+<div class="card"><div class="card-content"><div class="card-title">Чесночный</div><div class="card-weight">100 г</div><div class="card-price">100 ₽</div></div></div>
+<div class="card"><div class="card-content"><div class="card-title">Шашлычный</div><div class="card-weight">100 г</div><div class="card-price">100 ₽</div></div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>🍞 Хлеб</h2>
+<div class="products">
+<div class="card"><div class="card-content"><div class="card-title">Хлеб белый</div><div class="card-weight">1 шт</div><div class="card-price">20 ₽</div></div></div>
+<div class="card"><div class="card-content"><div class="card-title">Хлеб черный</div><div class="card-weight">1 шт</div><div class="card-price">20 ₽</div></div></div>
+<div class="card"><div class="card-content"><div class="card-title">Лаваш толстый</div><div class="card-weight">1 шт</div><div class="card-price">100 ₽</div></div></div>
+<div class="card"><div class="card-content"><div class="card-title">Лаваш тонкий</div><div class="card-weight">1 шт</div><div class="card-price">70 ₽</div></div></div>
+</div>
+</div>
+
+</div>
+<footer>☎ Телефон для заказа: +7 XXX XXX XX XX</footer>
 </body>
 </html>
